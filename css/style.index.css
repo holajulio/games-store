@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+header {
+    padding: 50px 0;
+}
+
+.inicio {
+    background-image: url(../img/games.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke: 1px gray;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+}
+
+.juegos {
+    font-size: 40px;
+    color: black;
+    -webkit-text-stroke: 1px #EABE3F;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+.sitio {
+    text-align: justify;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.j1, .j2, .j3, .j4, .j5 {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.d1, .d2, .d3, .d4, .d5 {
+    width: 45%;
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d1 img, .d2 img, .d3 img, .d4 img, .d5 img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.part1 {
+    width: 50%;
+}
+
+.part2 {
+    width: 25%;
+}
