@@ -44,6 +44,15 @@ img {
     margin: auto;
 }
 
+.twhocon{
+    width: 80%;
+    max-width: 800px;
+    background-color: #2a5770;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 footer{
     display: flex;
     text-align:left;
@@ -103,5 +112,34 @@ footer{
     .part3 {
         width: 100%;
         padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    .torre {
+        flex-direction: column;
+    }
+
+    .part1 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .part2 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .part3 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .ventana {
+        width: 100%;
     }
 }

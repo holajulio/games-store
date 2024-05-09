@@ -5,7 +5,10 @@
 
 body {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 70%;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -13,32 +16,38 @@ body {
 }
 
 header {
-    padding: 50px 0;
+    padding: 10% 0;
 }
 
 .inicio {
     background-image: url(../img/games.jpeg);
     background-position: center center;
     background-size: cover;
-    padding: 20px;
+    padding: 5%;
 }
+
+.entrante{
+    background-color: grey;
+    padding: 2% 4% 2% 4%;
+}
+
 
 h1 {
     font-size: 40px;
-    color: white;
-    -webkit-text-stroke: 1px gray;
-    margin-bottom: 10px;
+    color: whitesmoke;
+    -webkit-text-stroke: 2px black;
+    margin-bottom: 5%;
 }
 
 h2 {
-    color: white;
+    color: whitesmoke;
 }
 
 .juegos {
     font-size: 40px;
     color: black;
     -webkit-text-stroke: 1px #EABE3F;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 
 p {
@@ -57,18 +66,34 @@ p {
     justify-content: space-between;
     text-align: justify;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
+    background-color: grey;
 }
 
 .d1, .d2, .d3, .d4, .d5 {
     width: 45%;
-    padding: 20px;
+    padding: 1%;
     text-align: justify;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: #778899;
+    padding: 2% 4%;
+    border-radius: 2.5%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #708090;
+}
+
 
 .d1 img, .d2 img, .d3 img, .d4 img, .d5 img {
     width: 50%;
@@ -81,7 +106,133 @@ footer {
     justify-content: space-between;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 5%;
+}
+
+.part1 {
+    width: 50%;
+    p{
+        color: white;
+    }
+}
+
+.part2 {
+    width: 50%;
+    
+    p{
+        color: white;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 70%;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+header {
+    padding: 10% 0;
+}
+
+.inicio {
+    background-image: url(../img/games.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5%;
+}
+
+.entrante{
+    background-color: grey;
+    padding: 2% 4% 2% 4%;
+}
+
+
+h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    -webkit-text-stroke: 2px black;
+    margin-bottom: 5%;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+.juegos {
+    font-size: 40px;
+    color: black;
+    -webkit-text-stroke: 1px #EABE3F;
+    margin-bottom: 5%;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+.sitio {
+    text-align: justify;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.j1, .j2, .j3, .j4, .j5 {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    background-color: grey;
+}
+
+.d1, .d2, .d3, .d4, .d5 {
+    width: 45%;
+    padding: 1%;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: #778899;
+    padding: 2% 4%;
+    border-radius: 2.5%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #708090;
+}
+
+
+.d1 img, .d2 img, .d3 img, .d4 img, .d5 img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 5%;
 }
 
 .part1 {
@@ -89,5 +240,45 @@ footer {
 }
 
 .part2 {
-    width: 25%;
+    width: 50%;
+}
+
+/* Media query para pantallas con ancho máximo de 800px */
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 90%;
+    }
+
+    .part1, .part2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .j1, .j2, .j3, .j4, .j5 {
+        display: block;
+    }
+
+    .d1, .d2, .d3, .d4, .d5 {
+        width: auto;
+        padding: 4%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .d1 img, .d2 img, .d3 img, .d4 img, .d5 img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
 }
